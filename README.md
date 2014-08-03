@@ -22,4 +22,5 @@ Note
 This is merely [mrdaemon][code]'s original script with a modified `dat`
 file to display customized Unicode smileys & co.
 
-code: https://github.com/mrdaemon/irssi-emojis
+
+[code]: https://github.com/mrdaemon/irssi-emojis
