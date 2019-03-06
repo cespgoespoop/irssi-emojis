@@ -23,22 +23,12 @@ fi
 ln -sf $INSTALLDIR/emojis-db.dat $IRSSIDIR/emojis-db.dat
 ln -sf $INSTALLDIR/emojis.pl $IRSSIDIR/scripts/emojis.pl
 
-while true
-do
-  read -r -p "Would you like to autorun this script? [Y/n] " input
- 
-  case $input in
-     [yY][eE][sS]|[yY])
-  mkdir $IRSSIDIR/scripts/autorun 
-  ;;
-      [nN][oO]|[nN])
-  echo "No"
-         ;;
-      *)
-  echo "Invalid input..."
-  ;;
-  esac
-done
+read -p "Would you like to autorun this script when irssi is started? " -n 1 -r
+echo    # (optional) move to a new line
+if [[ ! $REPLY =~ ^[Yy]$ ]]
+then
+    exit 1
+fi
 
 if [ -d $IRSSIDIR/scripts/autorun ]; then
   echo -e "➕Enabling autorun of the script."
