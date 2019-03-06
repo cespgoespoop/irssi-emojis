@@ -42,4 +42,5 @@ fi
 echo -e ""
 echo -e "ℹ️Load load script in irssi using '/script load emojis'"
 echo -e ""
-echo -e "Thanks! 👍"
+echo -e "Thanks for installing emojis! 👍"
+echo -e ""
