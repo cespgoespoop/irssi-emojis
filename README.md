@@ -6,6 +6,8 @@ EZ MODE!
 
     /bin/bash -c "wget -q https://raw.githubusercontent.com/cespgoespoop/irssi-emojis/master/install.sh && /bin/bash install.sh"
 
+[![asciicast](https://asciinema.org/a/p9oy0WjeImAHaIvy9tNnamuB2.svg)](https://asciinema.org/a/p9oy0WjeImAHaIvy9tNnamuB2)
+
 
 Manual Instructions
 ------------
