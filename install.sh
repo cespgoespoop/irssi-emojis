@@ -23,11 +23,14 @@ fi
 ln -sf $INSTALLDIR/emojis-db.dat $IRSSIDIR/emojis-db.dat
 ln -sf $INSTALLDIR/emojis.pl $IRSSIDIR/scripts/emojis.pl
 
-read -p "Would you like to enable autorun? " -n 1 -r
-if [[ ! $REPLY =~ ^[Yy]$ ]]
-then
-  mkdir $IRSSIDIR/scripts/autorun
-fi
+while true; do
+    read -p "Do you wish to autostart this script? " yn
+    case $yn in
+        [Yy]* ) mkdir $IRSSIDIR/scripts/autorun; break;;
+        [Nn]* ) ;;
+        * ) echo "Please answer yes or no.";;
+    esac
+done
 
 if [ -d $IRSSIDIR/scripts/autorun ]; then
   echo -e "➕Enabling autorun of the script."
