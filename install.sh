@@ -7,8 +7,12 @@ if [ ! -d $INSTALLDIR ]; then
   git clone https://github.com/cespgoespoop/irssi-emojis.git
 fi
 
+if [ ! -d $IRSSIDIR/scripts ]; then
+  echo -e "📂Creating scripts directory"
+  mkdir $IRSSIDIR/scripts
+fi
 
-echo -e "✨ Installing imojis for irssi! ✨ "
+echo -e "✨ Installing emojis for irssi! ✨ "
 echo -e ""
 ln -sf $INSTALLDIR/emojis-db.dat $IRSSIDIR/emojis-db.dat
 ln -sf $INSTALLDIR/emojis.pl $IRSSIDIR/scripts/emojis.pl
