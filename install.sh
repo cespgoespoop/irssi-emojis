@@ -6,6 +6,11 @@ IRSSIDIR=$HOME/.irssi
 echo -e "✨ Installing emojis for irssi! ✨ "
 echo -e ""
 
+if [[ $EUID == 0 ]]; then
+   echo "Don't install this as root!" 
+   exit 1
+fi
+
 if [ ! -d $INSTALLDIR ]; then
   git clone https://github.com/cespgoespoop/irssi-emojis.git
 fi
