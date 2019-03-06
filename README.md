@@ -1,6 +1,12 @@
 Automagical emoji tags using Github/Campfire's code names
 
-Instructions
+
+EZ MODE!
+
+curl -s https://raw.githubusercontent.com/cespgoespoop/irssi-emojis/master/install.sh|/bin/bash
+
+
+Manual Instructions
 ------------
 
  1. put script in ~/.irssi/scripts
