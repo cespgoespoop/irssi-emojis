@@ -3,6 +3,11 @@
 INSTALLDIR=$HOME/irssi-emojis
 IRSSIDIR=$HOME/.irssi
 
+if [ ! -d $INSTALLDIR ]; then
+  git clone https://github.com/cespgoespoop/irssi-emojis.git
+fi
+
+
 echo -e "✨ Installing imojis for irssi! ✨ "
 echo -e ""
 ln -sf $INSTALLDIR/emojis-db.dat $IRSSIDIR/emojis-db.dat
