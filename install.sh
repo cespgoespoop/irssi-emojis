@@ -28,11 +28,14 @@ fi
 ln -sf $INSTALLDIR/emojis-db.dat $IRSSIDIR/emojis-db.dat
 ln -sf $INSTALLDIR/emojis.pl $IRSSIDIR/scripts/emojis.pl
 
-read -p "Would you like to autorun this script when irssi is started? " -n 1 -r
-echo    # (optional) move to a new line
-if [[ ! $REPLY =~ ^[Yy]$ ]]
-then
-    exit 1
+if [ ! -d $IRSSIDIR/scripts/autorun ]; then
+  read -p "Would you like to autorun this script when irssi is started? " -n 1 -r
+  echo    # (optional) move to a new line
+  if [[ $REPLY =~ ^[Yy]$ ]]
+  then
+    echo -e "📂Creating autorun directory"
+    mkdir $IRSSIDIR/scripts/autorun
+  fi
 fi
 
 if [ -d $IRSSIDIR/scripts/autorun ]; then
