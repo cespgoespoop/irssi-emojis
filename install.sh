@@ -24,7 +24,6 @@ ln -sf $INSTALLDIR/emojis-db.dat $IRSSIDIR/emojis-db.dat
 ln -sf $INSTALLDIR/emojis.pl $IRSSIDIR/scripts/emojis.pl
 
 read -p "Would you like to enable autorun? " -n 1 -r
-echo -e ""
 if [[ ! $REPLY =~ ^[Yy]$ ]]
 then
   mkdir $IRSSIDIR/scripts/autorun
