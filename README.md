@@ -2,8 +2,9 @@ Automagical emoji tags using Github/Campfire's code names
 
 
 EZ MODE!
+------------
 
-curl -s https://raw.githubusercontent.com/cespgoespoop/irssi-emojis/master/install.sh|/bin/bash
+    curl -s https://raw.githubusercontent.com/cespgoespoop/irssi-emojis/master/install.sh | /bin/bash
 
 
 Manual Instructions
