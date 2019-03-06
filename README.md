@@ -10,11 +10,11 @@ EZ MODE!
 Manual Instructions
 ------------
 
- 1. put script in ~/.irssi/scripts
- 2. put .dat file in ~/.irssi/
- 3. /script load emojis.pl
- 4. Use /emojis to display the list
- 5. Marvel at your ability to use things like `:shit:` :shit:
+ 1. Copy emojis.pl to ~/.irssi/scripts
+ 2. Copy  emojis-db.dat to ~/.irssi/
+ 3. Run '/script load emojis' in irssi
+ 4. Use /emojis to display the list available emojis
+ 5. Marvel at your ability to use things like `:poop:` :poop:
 
 You may add your own to the database, format is:
 
