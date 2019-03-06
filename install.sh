@@ -7,6 +7,11 @@ if [ ! -d $INSTALLDIR ]; then
   git clone https://github.com/cespgoespoop/irssi-emojis.git
 fi
 
+if [ ! -d $IRSSIDIR ]; then
+  echo -e "📂Creating sirssi configuration directory"
+  mkdir $IRSSIDIR
+fi
+
 if [ ! -d $IRSSIDIR/scripts ]; then
   echo -e "📂Creating scripts directory"
   mkdir $IRSSIDIR/scripts
