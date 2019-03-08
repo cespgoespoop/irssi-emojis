@@ -1,7 +1,7 @@
 Automagical emoji tags using Github/Campfire's code names
 
 
-EZ MODE!
+Auto Installer
 ------------
 
     /bin/bash -c "wget -q https://raw.githubusercontent.com/cespgoespoop/irssi-emojis/master/install.sh && /bin/bash install.sh"
